@@ -1,11 +1,13 @@
 # Appointment System
-
+  
 A .NET 8 / Avalonia desktop application for managing medical appointments, clients, and services (imaging modalities).
+College project, expect it to not be as good as enterprise grade software please! 
+Needs A LOT of improvement, like a LOT. Might use this for practice purposes.
 
 ## Features
 
 - **Clients Management**: Add, edit, delete, and view client (patient) records with contact info and notes.
-- **Services Management**: Manage imaging services (XRAY, ULTRASOUND, CT SCAN, MRI SCAN, MAMMOGRAPHY) with duration and pricing.
+- **Services Management**: Manage imaging services with duration and pricing.
 - **Appointments Scheduling**: Create, edit, and delete appointments linking clients to services with status tracking.
 - **Dashboard**: Overview of system statistics.
 - **User Authentication**: Login system with role-based access.
@@ -103,23 +105,6 @@ The app will:
 
 ## Known Limitations & Future Improvements
 
-- DataGrid rendering on some platforms; currently using ListBox as fallback
 - Compiled XAML/bindings can be re-enabled after further testing
 - Additional validation and error handling can be enhanced
 - Export/reporting features (PDF, CSV) not yet implemented
-- Payment/billing integration not included
-
-## Development Notes
-
-- **Diagnostic Logging**: Console logs available for debugging (can be removed for release)
-- **MVVM Pattern**: ViewModels use ObservableCollections for reactive UI updates
-- **Dependency Injection**: Configured in `App.xaml.cs` for services and repositories
-- **Code-behind**: Minimal use; primarily for event handlers and control initialization
-
-## License
-
-[Add your license here, e.g., MIT, Apache 2.0, etc.]
-
-## Contact
-
-[Your name/contact info]
