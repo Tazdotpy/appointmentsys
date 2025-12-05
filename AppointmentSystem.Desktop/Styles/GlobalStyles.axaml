@@ -1,0 +1,75 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Global TextBlock style -->
+    <Style Selector="TextBlock">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="14" />
+    </Style>
+
+    <!-- Global TextBox style -->
+    <Style Selector="TextBox">
+        <Setter Property="Background" Value="#222" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderBrush" Value="#555" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="6" />
+    </Style>
+
+    <!-- Global Button style -->
+    <Style Selector="Button">
+        <Setter Property="Background" Value="#333" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderBrush" Value="#555" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Padding" Value="8 4" />
+    </Style>
+
+    <!-- DataGrid styling to ensure cells/rows are visible with dark theme -->
+    <Style Selector="DataGrid">
+        <Setter Property="GridLinesVisibility" Value="Horizontal" />
+        <Setter Property="BorderBrush" Value="#2B2B2B" />
+    </Style>
+
+    <Style Selector="DataGridRow">
+        <Setter Property="MinHeight" Value="28" />
+        <Setter Property="Padding" Value="2" />
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <Style Selector="DataGridCell">
+        <Setter Property="Padding" Value="6 4" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderBrush" Value="#2B2B2B" />
+        <Setter Property="BorderThickness" Value="0" />
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="#2A2A2A" />
+        <Setter Property="Padding" Value="6 8" />
+    </Style>
+
+    <!-- ListBox item styling for the appointments list -->
+    <Style Selector="ListBoxItem">
+        <Setter Property="Padding" Value="6" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <Style Selector="ListBoxItem:selected">
+        <Setter Property="Background" Value="#444" />
+        <Setter Property="Foreground" Value="White" />
+    </Style>
+
+    <Style Selector="ListBoxItem:hover">
+        <Setter Property="Background" Value="#2E2E2E" />
+    </Style>
+
+    <Style Selector="ListBoxItem > Border">
+        <Setter Property="BorderBrush" Value="#2B2B2B" />
+        <Setter Property="BorderThickness" Value="0 0 0 1" />
+    </Style>
+
+</Styles>

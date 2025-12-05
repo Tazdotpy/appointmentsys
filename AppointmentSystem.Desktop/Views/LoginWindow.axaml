@@ -1,0 +1,36 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+          xmlns:vm="using:AppointmentSystem.Desktop.ViewModels"
+          x:Class="AppointmentSystem.Desktop.Views.LoginWindow"
+          x:DataType="vm:LoginViewModel"
+          Width="380" Height="260"
+          Title="Login">
+
+     <Border Padding="20">
+          <StackPanel Spacing="14">
+
+         <TextBlock Text="Username" />
+         <TextBox Name="UsernameBox"
+           Text="{Binding Username, Mode=TwoWay}"
+           Height="30"
+           Width="300"
+           HorizontalAlignment="Left" />
+
+         <TextBlock Text="Password" />
+         <TextBox Name="PasswordBox"
+           Text="{Binding Password, Mode=TwoWay}"
+           PasswordChar="●"
+           Height="30"
+           Width="300"
+           HorizontalAlignment="Left" />
+
+        <Button Content="Login"
+          Click="OnLoginClicked"
+          Width="100" Height="32" />
+
+     <TextBlock Text="{Binding ErrorMessage}"
+             Foreground="Red" />
+
+     </StackPanel>
+    </Border>
+</Window>

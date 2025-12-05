@@ -1,0 +1,27 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AppointmentSystem.Desktop.Views.ServiceFormWindow"
+        Width="400" Height="360"
+        Title="Service"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="20" Spacing="10">
+
+        <TextBlock Text="Name"/>
+        <TextBox Name="NameBox"/>
+
+        <TextBlock Text="Duration (minutes)"/>
+        <TextBox Name="DurationBox"/>
+
+        <TextBlock Text="Price"/>
+        <TextBox Name="PriceBox"/>
+
+        <TextBlock Name="ErrorText" Foreground="Red" Text=""/>
+
+        <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+            <Button Name="CancelBtn" Content="Cancel" Width="80"/>
+            <Button Name="SaveBtn" Content="Save" Width="80"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>

@@ -1,0 +1,39 @@
+# Build results
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# Visual Studio / VS Code
+.vscode/
+.vs/
+*.sln.user
+*.suo
+*.userosscache
+
+# User-specific files
+appsettings.*.json
+
+# Database files (local dev)
+*.db
+*.db-shm
+*.db-wal
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+packages/
+.dotnet/
+
+# Temporary files
+*.tmp
+*.temp

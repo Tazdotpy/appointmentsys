@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AppointmentSystem.Desktop.Views.MainWindow"
+        Width="900" Height="600"
+        Title="Appointment System">
+
+    <Grid ColumnDefinitions="200,*">
+
+        <!-- Sidebar -->
+        <Border Background="#1A1A1A">
+            <StackPanel Spacing="10" Margin="20">
+                <TextBlock Text="Scheduler"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Margin="0 0 0 20"
+                           Foreground="White"/>
+
+                <Button Content="Dashboard"   Name="DashboardBtn" />
+                <Button Content="Clients"     Name="ClientsBtn" />
+                <Button Content="Services"    Name="ServicesBtn" />
+                <Button Content="Appointments" Name="AppointmentsBtn" />
+            </StackPanel>
+        </Border>
+
+        <!-- Main content area -->
+        <Border Grid.Column="1" Background="#111">
+            <ContentControl x:Name="ContentArea"/>
+        </Border>
+
+    </Grid>
+
+</Window>

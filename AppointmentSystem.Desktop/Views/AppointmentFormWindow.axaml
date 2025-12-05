@@ -1,0 +1,55 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AppointmentSystem.Desktop.Views.AppointmentFormWindow"
+        Width="420" Height="520"
+        Title="Appointment"
+        WindowStartupLocation="CenterOwner">
+
+    <ScrollViewer>
+        <StackPanel Margin="20" Spacing="10">
+
+            <TextBlock Text="Client"/>
+            <ComboBox Name="ClientBox">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <TextBlock Text="Service"/>
+            <ComboBox Name="ServiceBox">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Name}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <TextBlock Text="Date"/>
+            <DatePicker Name="DateBox"/>
+
+            <TextBlock Text="Start Time (HH:MM)"/>
+            <TextBox Name="StartTimeBox"/>
+
+            <TextBlock Text="Status"/>
+            <ComboBox Name="StatusBox">
+                <ComboBoxItem Content="Scheduled"/>
+                <ComboBoxItem Content="Completed"/>
+                <ComboBoxItem Content="Canceled"/>
+            </ComboBox>
+
+            <TextBlock Text="Notes"/>
+            <TextBox Name="NotesBox" AcceptsReturn="True" Height="80"/>
+
+            <StackPanel Orientation="Horizontal" Spacing="10" HorizontalAlignment="Right">
+                <Button Name="CancelBtn" Content="Cancel" Width="80"/>
+                <Button Name="SaveBtn" Content="Save" Width="80"/>
+            </StackPanel>
+
+            <!-- Error message -->
+            <TextBlock Name="ErrorText" Foreground="Red" Margin="0,8,0,0" />
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
